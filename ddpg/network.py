@@ -3,15 +3,8 @@ from tensorflow.keras import Input, Model
 from tensorflow.keras.layers import Dense, Concatenate
 from config import ACTION_SPACE_SIZE
 import numpy as np
-#actor network
-#input: state vector; output: continuous actions
 
-#critic network
-#input: state and action; output: Q value
-
-#target actor & target critic network for stablization
-
-#Actor state input consists of IMU (6), Servo (12), Lidar (3)
+#Actor state input consists of IMU (6), Servo (12) if Lidar is added (3)
 
 
 class Actor:
