@@ -21,7 +21,7 @@ class RobotEnv:
         return self.robot.get_state()
     
     #need to make sure action is vector of continuous values
-    def take_action(self, action):
+    def step(self, action):
         reward = 0
         done = False
         self.robot.move(action)

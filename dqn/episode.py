@@ -23,7 +23,7 @@ def episode_loop():
     agent = DQNAgent()
     env = RobotEnv() 
 
-    current_state = env.rest()
+    current_state = env.reset()
     
     for episode in tqdm(range(1, EPISODES+1), ascii=True, unit='episodes'):
         episode_reward = 0

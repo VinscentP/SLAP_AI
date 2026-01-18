@@ -1,5 +1,3 @@
-from ast import Num
-from typing import Concatenate
 from ddpg.config import *
 from network import Actor, Critic
 from replay_buffer import ReplayBuffer
